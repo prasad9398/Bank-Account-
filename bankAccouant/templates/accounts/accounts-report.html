@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Account report</title>
+</head>
+<body bgcolor="yellow">
+<h1>Accounts Report</h1>
+<table border="1">
+  <tr>
+    <th bgcolor="blue">id</th>
+    <th bgcolor="blue">AccountHolder Name</th>
+      <th bgcolor="blue">Account Number</th>
+      <th bgcolor="blue">Contact</th>
+      <th bgcolor="blue">Address</th>
+      <th bgcolor="blue">Actions</th>
+
+    </tr>
+    {% for a in allAccountHolders %}
+    <tr>
+      <th>{{a.id}}</th>
+      <td>{{a.name}}</td>
+      <td>{{a.accountno}}</td>
+      <td>{{a.contact}}</td>
+      <td>{{a.address}}</td>
+
+      <td><a href="/ad/update/{{a.id}}">update</a></td>
+      <td><a href="/ad/delete/{{a.id}}">delete</a></td>
+
+    </tr>
+
+    {% endfor %}
+
+  </table>
+</body>
+</html>

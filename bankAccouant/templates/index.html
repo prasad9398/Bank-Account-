@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+<head>
+<title>Home page</title>
+<link rel="stylesheet" href="{% static "stylesheets/style.css" %}"/>
+</head>
+<body bgcolor="blue">
+  <h2>
+    <img src="{% static "images/Bank.avif" %}" width="150" height="150" alt="Image Not Found"/>
+    BankAccouant
+  </h2>
+  <br/>
+  <hr>
+  <br/>
+  <br/>
+  <br/>
+<div class="module">
+  <h1>Accounts</h1><br/>
+  <a href="/ad/newadm"><button type="button" name="button">Add Accounts</button></a><br/><br/>
+  <a href="/ad/admreport"><button type="button" name="button">Account Report</button></a><br/><br/>
+
+  </div>
+
+<div class="module">
+  <h1>Finance</h1><br/>
+  <a href="/fin/moneywith"><button type="button" name="button">money Withdraw</button></a><br/><br/>
+  <a href="/fin/moneydep"><button type="button" name="button">money Deposit</button></a><br/><br/>
+
+</body>
+
+</html>

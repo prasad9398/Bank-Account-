@@ -1,0 +1,28 @@
+{% load static %}
+<html>
+<head lang="en" dir="ltr">
+<meta charset="utf-8">
+<title>Adding Vendor</title>
+<link rel="stylesheet" href="{% static "stylesheets/style.css" %}"/>
+</head>
+<body>
+<h1>Hello, Welcome This is add Vendor page</h1>
+
+<img src="{% static "images/Bank.avif" %}" width="150" height="150" alt="Image Not Found"/>
+
+<h3>Please fill below application form</h3>
+
+<form method="POST">
+<table>
+
+  {{form.as_table}}
+</table>
+  <br/>
+
+  <input type="Submit" value="Add Account"/>
+  {% csrf_token %}
+</form>
+
+</body>
+
+</html>
